@@ -1,0 +1,114 @@
+/* Define standard variables and values for website */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  // background-color: $bgcolor;
+  // color: $textcolor;
+  font-size: $fontsize;
+}
+
+#main-page {
+  background: transparent url("../img/Rectangle.jpg") 0% 0% no-repeat
+    padding-box;
+  background-position: 57% 0%;
+  opacity: 1;
+}
+svg:not(:root) {
+  overflow: initial !important;
+}
+.financeText {
+  font-size: 60px;
+  font-family: HelveticaNeue-Bold, Helvetica Neue;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .financeText {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+#loader {
+  position: absolute;
+  left: 15%;
+  right: 75%;
+  top: 50%;
+  z-index: 1;
+  width: 80%;
+  height: 120px;
+  text-align: center;
+  margin: 0 auto;
+}
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.load-wrapp {
+  float: left;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load-wrapp p {
+  padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+  margin-right: 0;
+}
+.bar {
+  float: left;
+  width: 1100px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #4b9cdb;
+}
+.load-10 .bar {
+  animation: loadingJ 5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loadingJ {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(80px, 0);
+    background-color: #f5634a;
+    width: 25px;
+  }
+}
+.navbar-fixed-top.scrolled {
+  background-color: #0c4222 !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color: #555;
+}
+.bg-gree {
+  background: #0c4222;
+}
+.count {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: verdana;
+  float: left;
+  margin: 20px 25px;
+  text-shadow: 1px 1px black;
+}
